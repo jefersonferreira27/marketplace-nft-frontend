@@ -3,10 +3,10 @@ import { SiEthereum } from "react-icons/si";
 import imgSelo from "../../Ui/Img/Selo.png";
 import iconFast from "../../Ui/Img/icons/card-tick.png";
 import iconSafe from "../../Ui/Img/icons/chart-square.png";
-import cardHoverUm from "../../Ui/Img/img-card-hover/CardHoverUm.png";
-import cardHoverDois from "../../Ui/Img/img-card-hover/CardHoverDois.png";
+import cardHoverUm from "../../Ui/Img/img-card-hover/CardHoverUm.jpg";
+import cardHoverDois from "../../Ui/Img/img-card-hover/CardHoverDois.jpg";
 import cardHoverTres from "../../Ui/Img/img-card-hover/CardHoverTreis.jpg";
-import cardHoverQuatro from "../../Ui/Img/img-card-hover/CardHoverQuatro.png";
+import cardHoverQuatro from "../../Ui/Img/img-card-hover/CardHoverQuatro.jpg";
 import cardHoverCinco from "../../Ui/Img/img-card-hover/CardHoverCinco.jpg";
 import { useState } from "react";
 
@@ -80,7 +80,10 @@ const NunberValor = styled.div`
 
 const NameArt = styled.div`
   color: white;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 300;
+  margin-top: -15px;
 `;
 
 const Headerbox2 = styled.div`
@@ -368,14 +371,14 @@ const ButtonExplore = styled.div`
   margin: auto;
   font-family: 'Poppins';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 20px;
   letter-spacing: 2px;
 `;
 
 const ContainerFilterSection = styled.div`
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(79, 21, 91, 0.2) 96.73%), linear-gradient(180deg, #000000 0%, #3C0C46 92.36%), #000000;
-  height: 100vh;
+  height: 200vh;
   padding: 100px;
 `;
 
@@ -408,6 +411,8 @@ const MenuFilter = styled.div`
   font-size: 14px;
 `;
 
+
+
 function ButtonCategory({init,children }) {
   const [cor, setCor] = useState("")
   return (
@@ -436,6 +441,21 @@ const Foterr = styled.div`
   background: black;
 `;
 
+// Cards do NFT
+const ContainerCards = styled.div`
+  margin: 3% 0 0 0;
+  flex-direction: column;
+`
+
+const CardsNFT = styled.div`
+  width: 300px;
+  height: 360px;
+  border: 1px solid white;
+  border-radius: 15px;
+  margin: 0 3% 4% 0;
+
+`
+
 const Main = () => {
 
   const [category, setCategory] = useState("blue")
@@ -457,7 +477,7 @@ const Main = () => {
             </Box>
             <Box>
                 <NunberValor>12K+</NunberValor>
-                <NameArt>Auction
+                <NameArt>Action
                 </NameArt>
             </Box>
             <Box>
@@ -560,8 +580,28 @@ const Main = () => {
             <MenuFilter>Filter</MenuFilter>
           </Flex>
         </ButtonsFilter>
+        <ContainerCards>
+        <Flex>
+          <CardsNFT></CardsNFT>
+          <CardsNFT></CardsNFT>
+          <CardsNFT></CardsNFT>
+          <CardsNFT></CardsNFT>
+        </Flex>
+        <Flex>
+          <CardsNFT></CardsNFT>
+          <CardsNFT></CardsNFT>
+          <CardsNFT></CardsNFT>
+          <CardsNFT></CardsNFT>
+        </Flex>
+        <Flex>
+          <CardsNFT></CardsNFT>
+          <CardsNFT></CardsNFT>
+          <CardsNFT></CardsNFT>
+          <CardsNFT></CardsNFT>
+        </Flex>
+      </ContainerCards>
       </ContainerFilterSection>
-
+ 
 
 
       <Foterr></Foterr>
