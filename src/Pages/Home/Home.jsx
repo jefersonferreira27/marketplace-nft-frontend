@@ -580,28 +580,8 @@ const Main = () => {
             <MenuFilter>Filter</MenuFilter>
           </Flex>
         </ButtonsFilter>
-        <ContainerCards>
-        <Flex>
-          <CardsNFT></CardsNFT>
-          <CardsNFT></CardsNFT>
-          <CardsNFT></CardsNFT>
-          <CardsNFT></CardsNFT>
-        </Flex>
-        <Flex>
-          <CardsNFT></CardsNFT>
-          <CardsNFT></CardsNFT>
-          <CardsNFT></CardsNFT>
-          <CardsNFT></CardsNFT>
-        </Flex>
-        <Flex>
-          <CardsNFT></CardsNFT>
-          <CardsNFT></CardsNFT>
-          <CardsNFT></CardsNFT>
-          <CardsNFT></CardsNFT>
-        </Flex>
-      </ContainerCards>
       </ContainerFilterSection>
- 
+      
 
 
       <Foterr></Foterr>
