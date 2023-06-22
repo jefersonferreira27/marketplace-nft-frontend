@@ -1,9 +1,19 @@
+
+import Main from "./Pages/Home/Home";
+import Register from "./Pages/Sign/Sign";
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 const App = () => {
   return (
-    <div>
-      <h1>React App</h1>
-    </div>
-  )
-}
+    <Router>
+      <Routes>
+          <Route path='/register' element={<Register/>} />
+          <Route path='/' element={<Main/>} />
+      </Routes>
+    </Router>
 
-export default App
+  );
+};
+
+export default App;
